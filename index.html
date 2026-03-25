@@ -18,12 +18,11 @@
      ════════════════════════════════════════════════ -->
 
 <script type="module">
-  import { initializeApp } from "firebase/app";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getDatabase, ref, set, get, onValue, remove, update }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-  // ▼▼▼ ضع بيانات مشروعك هنا ▼▼▼
-  const firebaseConfig = {
+ const firebaseConfig = {
   apiKey: "AIzaSyCjIqzQY8O08AlJgfxyRz0Z94eV86UMlBc",
   authDomain: "eilshaddai.firebaseapp.com",
   projectId: "eilshaddai",
@@ -31,6 +30,8 @@
   messagingSenderId: "636796819960",
   appId: "1:636796819960:web:9faad7c963d2c6f5c19e0d"
   };
+  // ▲▲▲ ──────────────────────── ▲▲▲
+
   const app = initializeApp(firebaseConfig);
   const db  = getDatabase(app);
 
